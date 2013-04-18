@@ -1,0 +1,4 @@
+name: BattleCommands
+main: net.battlenexus.bukkit.battlecommands.main.BattleCommands
+version: 1.0.0
+description: Execute commands remotely
