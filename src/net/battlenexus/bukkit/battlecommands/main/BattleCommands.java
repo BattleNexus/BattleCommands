@@ -6,6 +6,7 @@ import net.battlenexus.bukkit.battlecommands.db.MySQL;
 import net.battlenexus.bukkit.battlecommands.db.SQL;
 import net.battlenexus.bukkit.battlecommands.system.CommandThread;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class BattleCommands extends JavaPlugin {
@@ -52,7 +53,7 @@ public class BattleCommands extends JavaPlugin {
 	
 	public void executeCommand(String command) {
 		log.info("Executing " + command);
-		getServer().dispatchCommand(getServer().getConsoleSender(), command);
+		Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
 	}
 	
 	public void log(String message) {
